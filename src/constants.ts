@@ -30,6 +30,7 @@ export enum ChatModels {
   GPT_4_TURBO = "gpt-4-turbo",
   GEMINI_PRO = "gemini-1.5-pro",
   GEMINI_FLASH = "gemini-1.5-flash",
+  GEMINI_FLASH_2 = "gemini-2.0-flash-exp",
   AZURE_OPENAI = "azure-openai",
   CLAUDE_3_5_SONNET = "claude-3-5-sonnet-latest",
   CLAUDE_3_5_HAIKU = "claude-3-5-haiku-latest",
@@ -105,6 +106,12 @@ export const BUILTIN_CHAT_MODELS: CustomModel[] = [
   },
   {
     name: ChatModels.GEMINI_FLASH,
+    provider: ChatModelProviders.GOOGLE,
+    enabled: true,
+    isBuiltIn: true,
+  },
+  {
+    name: ChatModels.GEMINI_FLASH_2,
     provider: ChatModelProviders.GOOGLE,
     enabled: true,
     isBuiltIn: true,
